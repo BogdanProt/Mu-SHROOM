@@ -22,7 +22,7 @@ for entry in cleaned_surprisal_data:
     del entry["surprisal_scores"]
 
 #Save file
-output_file_path = "probabilities.json"
+output_file_path = "probabilities.jsonl"
 with open(output_file_path, "w") as file:
     json.dump(cleaned_surprisal_data, file, indent=4)
 
