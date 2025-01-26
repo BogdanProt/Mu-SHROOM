@@ -31,7 +31,7 @@ def save_surprisal_scores(sentences, output_file):
         json.dump(results, f, indent=4)
 
 
-file_path = "datasets/val/mushroom.en-val.v2.jsonl"
+file_path = "../../datasets/val/mushroom.en-val.v2.jsonl"
 output_file = "surprisal_scores.json"
 sentences = extract_data(file_path)
 save_surprisal_scores(sentences, output_file)
